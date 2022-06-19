@@ -1,0 +1,46 @@
+#include <stdio.h>
+
+void main() {
+    int code,qan,price;
+    int total=0;
+    int no =0;
+    printf("Hello, welcome to DigiShop");
+    printf("\nwhat you want to buy ?");
+    printf("\ncode : 1 to buy TV price : rs. 50,000");
+    printf("\ncode : 2 to buy mobile phone price : rs. 60,000");
+    printf("\ncode : 3 to buy microwave price : rs. 30,000");
+    printf("\ncode : 4 to buy smart watch price : rs. 5000");
+    printf("\ncode : 5 to buy video game price : rs. 8000");
+    
+    printf("\n\nEnter number of items you want to buy : ");
+    scanf("%d",&no);
+    
+    for (int i = 1 ; i<=no; i++)
+    {
+    
+    printf("\n\nEnter code no: ");
+    scanf("%d",&code);
+    printf("\nEnter quantity : ");
+    scanf("%d",&qan);
+  
+    if(code==1)
+    {
+        total=total+50000*qan;
+    }else if(code==2)
+    {
+        total=total+60000*qan;
+    }else if(code==3)
+    {
+        total=total+30000*qan;
+    }else if(code==4)
+    {
+        total=total+5000*qan;
+    }else if(code==5)
+    {
+        total=total+8000*qan;
+    }else{
+        printf("not available!");
+    }
+    }
+printf("%d",total);    
+}
